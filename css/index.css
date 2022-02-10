@@ -1,0 +1,533 @@
+.banner {
+  background: transparent;
+  height: 69.2em;
+  overflow: hidden;
+}
+.banner #background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+}
+.banner .box {
+  width: 100%;
+  text-align: center;
+  padding-top: 10em;
+}
+.banner .box .title {
+  font-family: OSLight;
+  font-size: 4em;
+  text-transform: uppercase;
+  color: #999999;
+}
+.banner .box .title span {
+  font-family: OSBold;
+  color: #fcac45;
+}
+.banner .box .desc {
+  font-family: OSLight;
+  color: #999;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  margin-bottom: 20em;
+}
+.banner .box .desc span {
+  font-family: OSBold;
+  color: #c3c3c3;
+}
+.banner .box .more a {
+  width: 3em;
+  height: 3em;
+  line-height: 3em;
+  text-align: center;
+  border: 2px solid #c3c3c3;
+  border-radius: 100%;
+  color: #c3c3c3;
+  transition: all linear 0.3s;
+}
+.banner .box .more a:hover {
+  box-shadow: 0px 0px 5px 2px #c3c3c3;
+  transform: translateY(-10px);
+}
+@media screen and (max-width: 720px) {
+  .banner .box .title {
+    font-size: 2.2em;
+    margin-bottom: 0.5em;
+  }
+  .banner .box .desc {
+    font-size: 1.2em;
+    margin-bottom: 15vh;
+  }
+}
+.about {
+  padding: 5em 0em;
+  background: #fff;
+  overflow: hidden;
+}
+.about .container {
+  display: flex;
+}
+.about .container .left {
+  flex-shrink: 0.2;
+}
+.about .container .right .info {
+  margin-bottom: 2em;
+}
+.about .container .right .info .short {
+  font-family: OSLight;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.about .container .right .info .title {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: OSLight;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.about .container .right .info .title span:first-child {
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  border-bottom: 4px solid #fcac45;
+}
+.about .container .right .info .title span:last-child {
+  font-family: OSBold;
+}
+.about .container .content {
+  margin-bottom: 1.5em;
+  font-family: OSLight;
+  color: #6c6c6c;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+.about .container .newlist {
+  margin-bottom: 2em;
+}
+.about .container .newlist li {
+  font-size: 1.3em;
+  height: 2em;
+  line-height: 2em;
+}
+.about .container .newlist li span:first-child {
+  top: 2px;
+}
+.about .container .newlist li span:nth-child(2) {
+  font-family: OSBold;
+}
+.about .container .newlist li span:last-child {
+  font-family: OSLtalic;
+  color: #5a5a5a;
+}
+.about .container .work_btn {
+  width: 14em;
+  height: 3.5em;
+  line-height: 3.5em;
+  text-align: center;
+  border: 1px solid #7f7f7f;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: all linear 0.3s;
+}
+.about .container .work_btn:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 13px 2px #7f7f7f;
+}
+.about .container .work_btn .icon img {
+  margin-top: -2px;
+}
+.about .container .work_btn a {
+  color: #7f7f7f;
+  text-transform: uppercase;
+  font-size: 1em;
+  margin-left: 0.5em;
+}
+@media screen and (max-width: 600px) {
+  .about .left {
+    display: none;
+  }
+}
+.team {
+  background: #070707;
+  padding: 5em 0em 2em;
+  text-align: center;
+}
+.team .subject {
+  color: #fff;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: OSLight;
+  letter-spacing: 2px;
+  background: url('../images/team_title_bg.png') no-repeat center bottom;
+  line-height: 3em;
+  margin-bottom: 3em;
+}
+.team .subject span {
+  font-family: OSBold;
+}
+.team .list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5em;
+}
+.team .list .item {
+  width: 21%;
+}
+.team .list .item .thumb {
+  width: 10em;
+  height: 10em;
+  margin: 0 auto;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+.team .list .item .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.team .list .item .content {
+  font-size: 1.2em;
+  color: #fff;
+}
+.team .list .item .content .title {
+  font-family: OSBold;
+}
+.team .list .item .content .info {
+  font-family: OSLight;
+  margin-bottom: 2em;
+}
+.team .list .item .content .desc {
+  height: 10.5em;
+  overflow: hidden;
+  font-family: OSLight;
+}
+.team .more {
+  width: 100%;
+  text-align: center;
+}
+.team .more label {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  cursor: pointer;
+  background: #fff;
+  transition: all linear 0.3s;
+  margin-right: 0.5em;
+}
+.team .more label:hover {
+  background: #fcac45;
+}
+.team input[name='radio'],
+.team input[name='radio'] + .container {
+  display: none;
+}
+.team input[name='radio']:checked + .container,
+.team input[name='radio']:checked ~ .more {
+  display: inline-block;
+}
+.team #radio1:checked ~ .more label:nth-child(1),
+.team #radio2:checked ~ .more label:nth-child(2),
+.team #radio3:checked ~ .more label:nth-child(3) {
+  background: #fcac45;
+}
+@media screen and (max-width: 600px) {
+  .team .subject {
+    font-size: 2em;
+    line-height: 4em;
+  }
+  .team .list {
+    display: block;
+    text-align: left;
+  }
+  .team .list .item {
+    width: 100%;
+    display: flex;
+    margin-bottom: 2em;
+  }
+  .team .list .item .thumb {
+    flex-shrink: 0;
+    margin: 0;
+    margin-right: 2em;
+  }
+  .team .list .item .content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .team .list .item .content div {
+    width: 100%;
+    text-align: left;
+  }
+  .team .list .item .content .info {
+    margin-bottom: 0;
+  }
+  .team .list .item:last-child {
+    margin-bottom: 0;
+  }
+}
+.work {
+  background: #fff;
+  padding: 5em 0em 2em;
+}
+.work .subject {
+  text-align: center;
+  color: #000;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-family: OSLight;
+  letter-spacing: 2px;
+  background: url('../images/team_title_bg.png') no-repeat center bottom;
+  line-height: 3em;
+  margin-bottom: 1em;
+}
+.work .subject span {
+  font-family: OSBold;
+}
+.work .desc {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 5em;
+  font-family: OSLtalic;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1.7em;
+  color: #6c6c6c;
+}
+.work .box .top {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+.work .box .top .left {
+  font-family: OSBold;
+  text-transform: uppercase;
+  font-size: 1.3em;
+}
+.work .box .top .right {
+  display: flex;
+  justify-content: space-around;
+}
+.work .box .top .right a {
+  display: inline-block;
+  font-size: 1.2em;
+  text-transform: capitalize;
+  color: #6c6c6c;
+  border-right: 1px solid #6c6c6c;
+  padding: 0em 1em;
+}
+.work .box .top .right a:last-child {
+  border-right: 0px;
+}
+.work .box .list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.work .box .list .item {
+  width: 23%;
+  height: 23%;
+  margin-bottom: 2em;
+}
+@media screen and (max-width: 600px) {
+  .work .subject {
+    font-size: 2em;
+    line-height: 4em;
+  }
+  .work .box .top .left {
+    display: none;
+  }
+  .work .box .top .right {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .work .box .top .right a {
+    display: inline-block;
+    text-align: center;
+    width: 24%;
+    padding: 0;
+  }
+  .work .box .list .item {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .work {
+    padding-top: 3em;
+  }
+  .work .subject {
+    font-size: 1.5em;
+    line-height: 4em;
+  }
+  .work .box .top .right {
+    overflow: hidden;
+  }
+  .work .box .top .right a {
+    font-size: 1em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  .work .box .list {
+    padding: 0 1em;
+  }
+}
+.clients {
+  background: #070707;
+  padding: 4em 0em 1em;
+}
+.clients .title {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2em;
+  background: url('../images/team_title_bg.png') no-repeat center bottom;
+  font-family: OSLight;
+  color: #fff;
+  padding-bottom: 1.5em;
+  margin-bottom: 3em;
+}
+.clients .title span {
+  font-family: OSBold;
+}
+.clients .content {
+  display: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2em;
+  width: 100%;
+  margin-bottom: 2em;
+}
+.clients .content .desc {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 1.5em;
+}
+.clients .content .name {
+  letter-spacing: 0.8em;
+}
+.clients input[name='client'] {
+  display: none;
+}
+.clients input[name='client']:checked + .content {
+  display: inline-block;
+}
+.clients .point {
+  text-align: center;
+  margin-top: 1.5em;
+}
+.clients .point label {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  background: #fff;
+  cursor: pointer;
+  margin-right: 0.5em;
+  transition: all linear 0.3s;
+}
+.clients .point label:hover {
+  background: #fcac45;
+}
+.clients #radio10:checked ~ .point label:nth-child(1),
+.clients #radio20:checked ~ .point label:nth-child(2),
+.clients #radio30:checked ~ .point label:nth-child(3) {
+  background: #fcac45;
+}
+.contact {
+  background: #fff;
+  padding: 4em 0em 1em;
+  height: 50em;
+}
+.contact .subject {
+  font-size: 2em;
+  text-transform: uppercase;
+  background: url('../images/team_title_bg.png') no-repeat center bottom;
+  padding-bottom: 1.5em;
+  color: #000;
+  font-family: OSLight;
+  margin-bottom: 2em;
+  text-align: center;
+}
+.contact .subject span {
+  font-family: OSBold;
+}
+.contact .desc {
+  width: 80%;
+  margin: 0 auto;
+  font-family: OSLtalic;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 3em;
+  text-align: center;
+}
+.contact .content {
+  width: 80%;
+  margin: 0 auto;
+}
+.contact .content .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5em;
+}
+.contact .content .info .left,
+.contact .content .info .right {
+  width: 48%;
+}
+.contact .content .info .left .top span,
+.contact .content .info .right .top span {
+  font-size: 1.3em;
+  text-transform: capitalize;
+  color: #636363;
+}
+.contact .content .info .left .top sup,
+.contact .content .info .right .top sup {
+  color: #dd1111;
+  font-size: 1.1em;
+}
+.contact .content .info .left .bottom input,
+.contact .content .info .right .bottom input {
+  width: 100%;
+  height: 2em;
+  line-height: 2em;
+  border: 1px solid #636363;
+  font-size: 1.2em;
+}
+.contact .content .message {
+  margin-bottom: 1.5em;
+}
+.contact .content .message .top span {
+  font-size: 1.3em;
+  text-transform: capitalize;
+  color: #636363;
+}
+.contact .content .message .top sup {
+  color: #dd1111;
+  font-size: 1.1em;
+}
+.contact .content .message .bottom textarea {
+  width: 100%;
+}
+.contact .content .send {
+  text-align: right;
+}
+.contact .content .send button {
+  width: 10em;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  color: #fff;
+  background: #fcac45;
+  font-size: 1.1em;
+  border: 0px;
+  transition: all linear 0.3s;
+}
+.contact .content .send button:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 7px 1px #636363;
+}

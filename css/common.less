@@ -1,0 +1,54 @@
+.header{
+    background-color: transparent;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 1em 0em;
+    .navbar-inverse{
+        background-color: transparent;
+        border-color: transparent;
+        .navbar-nav>li>a{
+            color: #fff;
+        }
+    }
+    .logo{
+        text-transform: uppercase;
+        color: #fff;
+        transition: all linear .1s;
+        &:hover{
+            transform: scale(1.2);
+        }
+       
+
+    }
+    .menu{
+        a{
+            text-transform: uppercase;
+            color: #fff;
+            transition: all linear .1s;
+            border-bottom: 3px solid transparent;
+            span{
+                display: inline-block;
+                transition: all linear .1s;
+            }
+            &:hover{
+                border-bottom: 3px solid #fcac45;
+
+                span{
+                    transform:scale(1.2) ;
+                }
+            }
+            
+        }
+        
+    }
+    @media screen and (max-width:768px){
+        .menu{
+          a{
+            text-align: center;
+          }
+        }
+      }
+}
